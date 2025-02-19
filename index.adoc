@@ -83,9 +83,9 @@ When getting registered, you will:
 
 * Have a designated town area, which can be appropriately increased by asking staff
 
-* Have town ranks with different permissions
+* Have town ranks with different permissions listed below
 
-* Capes, if the requirements are met
+* Have town capes, if the requirements are met
 ====
 === Ranks
 [%collapsible]
