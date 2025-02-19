@@ -1,2 +1,107 @@
 :version: 1.21.4
-= DMU {version} Informations
+:factionmgr: cocainesnake
+:townmgr: jayson.json
+
+= DMU {version} Information
+
+This contains all relevant information about the changes made in the update from 1.16.5 to {version} of DMU.
+
+Note that everything here is subject to change and will be updated accordingly.
+
+== Factions changes
+=== Registration
+[%collapsible]
+====
+In order for a faction to be recognised by staff, it will need to be registered on DMU.
+
+The initial creation of a faction can only be done by server admins.
+
+However faction owners, or anyone with role perms, can later change certain aspects.
+
+
+To get your faction created and registered, message `{factionmgr}` with the following:
+
+- The name of your faction
+
+- The Minecraft username of the owner
+
+Keep in mind that the faction requirements are still in place.
+====
+
+=== Capes
+[%collapsible]
+====
+After getting your faction registered, you'll have the option of adding custom capes.
+
+These capes will be added to specifically DMU to avoid cluttering the main mod.
+
+The faction owner, or anyone with perms, will then be able to give these capes to members.
+
+To get a cape added, message `{townmgr}` with the following:
+
+* The name of your faction
+
+* The identifier
+
+** For e.g. `unit:cape_one`
+
+* Your custom cape texture
+
+** You can get the default texture here
+====
+== Ranks changes
+=== Custom ranks
+[%collapsible]
+====
+With our new database, we've added the ability to set a prefix that will display in the playerlist.
+
+These prefixes are limited to 5 characters, excluding formatting and square brackets.
+
+To get a tab prefix, you can either:
+
+* Use the `/prefix` command
+
+  ** You will need to wait for staff to accept it. Once they do, you'll have to wait a month before changing it again
+
+  ** This command can also change your chat prefix
+
+* Message `{townmgr}` with your current rank and what you'd like the prefix to be
+====
+== Towns changes
+=== Registration
+[%collapsible]
+====
+Simalarly to factions, towns will also need to be registered on DMU.
+
+The town requirements are still in place.
+
+When getting registered, you will:
+
+* Have a global TARDIS warp, which can be accessed via the planned global-warp-list system
+
+** You will need to designate these positions and ensure the town has enough, otherwise players will be unable to land
+
+* Have a designated town area, which can be appropriately increased by asking staff
+
+* Have town ranks with different permissions
+
+* Capes, if the requirements are met
+====
+=== Ranks
+[%collapsible]
+====
+Much like factions, towns will have roles.
+
+These roles can be granted different permissions, such as:
+
+* `CAN_ENTER` - Defines whether users with the role can enter the towns given area
+** This cannot be removed from the default member role
+
+* `BREAK_BLOCKS`/`PLACE_BLOCKS`/`INTERACT_BLOCKS` - Defines whether users with the role can break, place or interact with blocks in the towns given area
+
+* `CREATE_ROLE` - Defines whether users with the role can create other roles, alongside modifying permissions
+
+* `ASSIGN_RANK` - Defines whether users with the role can give members town roles
+
+* `ASSIGN_CAPE` - Defines whether users can give a player access to any capes the town may have
+====
