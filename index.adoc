@@ -47,7 +47,7 @@ To get a cape added, message `{townmgr}` with the following:
 
 * Your custom cape texture
 
-** You can get the default texture here
+** You can get the default texture here: https://jaysonjson.github.io/DMU1.2x/default_cape.png +
 ====
 == Ranks changes
 === Custom ranks
