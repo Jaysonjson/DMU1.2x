@@ -82,6 +82,11 @@ Members can only target roles/members lower than their current role.
 
 ====
 == Ranks changes
+
+Bold formatting within ranks prefixes has been removed.
+
+It will automatically be removed from any requests made by `/prefix`.
+
 === Custom ranks
 [%collapsible]
 ====
