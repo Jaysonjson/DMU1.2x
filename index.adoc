@@ -9,6 +9,11 @@ This contains all relevant information about the changes made in the update from
 Note that everything here is subject to change and will be updated accordingly.
 
 == Factions changes
+
+Players can only be a member of 2 factions at once, and can only own 1.
+
+Players who own a faction can still join 1 other faction.
+
 === Registration
 [%collapsible]
 ====
@@ -95,6 +100,9 @@ To get a tab prefix, you can either:
 * Message `{townmgr}` with your current rank and what you'd like the prefix to be
 ====
 == Towns changes
+
+There is no limit as to how many towns a player can be a member of.
+
 === Registration
 [%collapsible]
 ====
