@@ -49,6 +49,33 @@ To get a cape added, message `{townmgr}` with the following:
 
 ** You can get the default texture here: https://jaysonjson.github.io/DMU1.2x/default_cape.png +
 ====
+
+=== Roles
+[%collapsible]
+====
+With the new factions system, we've added in-faction roles that allow certain members more privileges than others.
+
+Note that the faction owner will not (and cannot) have a role, but will have all permissions.
+
+The permissions these roles can have are:
+
+* `CHANGE_NAME` - Defines whether users with the role can change the factions name
+
+* `CHANGE_AGGRESSION` - Defines whether users with the role can change the factions aggression stance
+
+* `INVITE_MEMBERS` - Defines whether users with the role can invite other players to the faction
+
+* `KICK_MEMBERS` - Defines whether users with the role can kick members from the faction
+
+* `MANAGE_ROLES` - Defines whether users with the role can set another members role
+
+* `MANAGE_PERMISSIONS` - Defines whether users with the role can update another roles permissions
+
+* `MANAGE_CAPES` - Defines whether users with the role can give members access to any capes the faction may have
+
+Members can only target roles/members lower than their current role.
+
+====
 == Ranks changes
 === Custom ranks
 [%collapsible]
@@ -101,7 +128,11 @@ These roles can be granted different permissions, such as:
 
 * `CREATE_ROLE` - Defines whether users with the role can create other roles, alongside modifying permissions
 
-* `ASSIGN_RANK` - Defines whether users with the role can give members town roles
+* `ASSIGN_ROLE` - Defines whether users with the role can give members town roles
 
 * `ASSIGN_CAPE` - Defines whether users can give a player access to any capes the town may have
+
+Similarly to factions, the owner will not have a role but will have all permissions.
+
+Members can only target roles/members lower than their current role.
 ====
