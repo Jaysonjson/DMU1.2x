@@ -110,7 +110,7 @@ Simalarly to factions, towns will also need to be registered on DMU.
 
 The town requirements are still in place.
 
-When getting registered, you will:
+After getting registered, you will:
 
 * Have a global TARDIS warp, which can be accessed via the planned global-warp-list system
 
