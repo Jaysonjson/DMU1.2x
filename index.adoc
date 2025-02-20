@@ -72,11 +72,11 @@ The permissions these roles can have are:
 
 * `KICK_MEMBERS` - Defines whether users with the role can kick members from the faction
 
-* `MANAGE_ROLES` - Defines whether users with the role can set another members role
+* `MANAGE_ROLES` - Defines whether users with the role can set another members role, alongside update permissions for it
 
-* `MANAGE_PERMISSIONS` - Defines whether users with the role can update another roles permissions
+* `ASSIGN_ROLES` - Defines whether users with the role can change a members role
 
-* `MANAGE_CAPES` - Defines whether users with the role can give members access to any capes the faction may have
+* `ASSIGN_CAPES` - Defines whether users with the role can give members access to any capes the faction may have
 
 Members can only target roles/members lower than their current role.
 
@@ -139,11 +139,15 @@ These roles can be granted different permissions, such as:
 
 * `BREAK_BLOCKS`/`PLACE_BLOCKS`/`INTERACT_BLOCKS` - Defines whether users with the role can break, place or interact with blocks in the towns given area
 
-* `CREATE_ROLE` - Defines whether users with the role can create other roles, alongside modifying permissions
+* `MANAGE_ROLES` - Defines whether users with the role can create other roles, and manage their permissions
 
-* `ASSIGN_ROLE` - Defines whether users with the role can give members town roles
+* `ASSIGN_ROLES` - Defines whether users with the role can give members town roles
 
-* `ASSIGN_CAPE` - Defines whether users can give a player access to any capes the town may have
+* `ASSIGN_CAPES` - Defines whether users with the role can give a player access to any capes the town may have
+
+* `KICK_MEMBERS` - Defines whether users with the role can remove players from the town
+
+* `ACCEPT_JOIN_REQUESTS` - Defines whether users with the role can accept a users request to join the town
 
 Similarly to factions, the owner will not have a role but will have all permissions.
 
