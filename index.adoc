@@ -64,19 +64,19 @@ Note that the faction owner will not (and cannot) have a role, but will have all
 
 The permissions these roles can have are:
 
-* `CHANGE_NAME` - Defines whether users with the role can change the factions name
+* `CHANGE_NAME` - Can change the factions name
 
-* `CHANGE_AGGRESSION` - Defines whether users with the role can change the factions aggression stance
+* `CHANGE_AGGRESSION` - Can change the factions aggression stance
 
-* `INVITE_MEMBERS` - Defines whether users with the role can invite other players to the faction
+* `INVITE_MEMBERS` - Can invite other players to the faction
 
-* `KICK_MEMBERS` - Defines whether users with the role can kick members from the faction
+* `KICK_MEMBERS` - Can kick members from the faction
 
-* `MANAGE_ROLES` - Defines whether users with the role can set another members role, alongside update permissions for it
+* `MANAGE_ROLES` - Can set another members role, alongside update permissions for it
 
-* `ASSIGN_ROLES` - Defines whether users with the role can change a members role
+* `ASSIGN_ROLES` - Can change a members role
 
-* `ASSIGN_CAPES` - Defines whether users with the role can give members access to any capes the faction may have
+* `ASSIGN_CAPES` - Can give members access to any capes the faction may have
 
 Members can only target roles/members lower than their current role.
 
