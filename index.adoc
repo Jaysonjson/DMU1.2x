@@ -134,22 +134,28 @@ Much like factions, towns will have roles.
 
 These roles can be granted different permissions, such as:
 
-* `CAN_ENTER` - Defines whether users with the role can enter the towns given area
-** This cannot be removed from the default member role
+* `BREAK_BLOCKS`/`PLACE_BLOCKS`/`INTERACT_BLOCKS` - Can break, place or interact with blocks in the towns given area
 
-* `BREAK_BLOCKS`/`PLACE_BLOCKS`/`INTERACT_BLOCKS` - Defines whether users with the role can break, place or interact with blocks in the towns given area
+* `MANAGE_ROLES` - Can create other roles, and manage their permissions
 
-* `MANAGE_ROLES` - Defines whether users with the role can create other roles, and manage their permissions
+* `ASSIGN_ROLES` - Can give members town roles
 
-* `ASSIGN_ROLES` - Defines whether users with the role can give members town roles
+* `ASSIGN_CAPES` - Can give a player access to any capes the town may have
 
-* `ASSIGN_CAPES` - Defines whether users with the role can give a player access to any capes the town may have
+* `KICK_MEMBERS` - Can remove players from the town
 
-* `KICK_MEMBERS` - Defines whether users with the role can remove players from the town
+* `BAN_MEMBERS` - Can ban members from the town, stopping them from entering the town area
 
-* `ACCEPT_JOIN_REQUESTS` - Defines whether users with the role can accept a users request to join the town
+* `ACCEPT_JOIN_REQUESTS` - Can accept a users request to join the town
 
 Similarly to factions, the owner will not have a role but will have all permissions.
 
 Members can only target roles/members lower than their current role.
+====
+=== Banned players
+[%collapsible]
+====
+Banned players are not allowed to enter the town area, nor interact with any blocks within it.
+
+Members with the `BAN_PLAYERS` permission can ban/unban players from the town.
 ====
