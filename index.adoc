@@ -180,5 +180,5 @@ This currently includes the following:
  * Will display your item in chat, including the tooltip
 
 - `<$pos/position>`
- * Will display `[position]` in chat, which users can hover their cursor over to see more information.
+ * Will display `[position]` in chat, which will let users see more information by hovering over it with their cursor.
 ====
