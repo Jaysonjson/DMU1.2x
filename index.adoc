@@ -81,29 +81,6 @@ The permissions these roles can have are:
 Members can only target roles/members lower than their current role.
 
 ====
-== Ranks changes
-
-Bold formatting within ranks prefixes has been removed.
-
-It will automatically be removed from any requests made by `/prefix`.
-
-=== Custom ranks
-[%collapsible]
-====
-With our new database, we've added the ability to set a prefix that will display in the playerlist.
-
-These prefixes are limited to 5 characters, excluding formatting and square brackets.
-
-To get a tab prefix, you can either:
-
-* Use the `/prefix` command
-
-  ** You will need to wait for staff to accept it. Once they do, you'll have to wait a month before changing it again
-
-  ** This command can also change your chat prefix
-
-* Message `{townmgr}` with your current rank and what you'd like the prefix to be
-====
 == Towns changes
 
 There is no limit as to how many towns a player can be a member of.
@@ -158,4 +135,50 @@ Members can only target roles/members lower than their current role.
 Banned players are not allowed to enter the town area, nor interact with any blocks within it.
 
 Members with the `BAN_PLAYERS` permission can ban/unban players from the town.
+====
+== Ranks changes
+
+Bold formatting within ranks prefixes has been removed.
+
+It will automatically be removed from any requests made by `/prefix`.
+
+=== Custom ranks
+[%collapsible]
+====
+With our new database, we've added the ability to set a prefix that will display in the playerlist.
+
+These prefixes are limited to 5 characters, excluding formatting and square brackets.
+
+To get a tab prefix, you can either:
+
+* Use the `/prefix` command
+
+  ** You will need to wait for staff to accept it. Once they do, you'll have to wait a month before changing it again
+
+  ** This command can also change your chat prefix
+
+* Message `{townmgr}` with your current rank and what you'd like the prefix to be
+====
+== Chat Changes
+=== Formatting
+[%collapsible]
+====
+We've added the ability to use hex colour codes in chat.
+
+This can be done by typing `<#000000>` in chat, replacing `#000000` with the hex colour of your choice.
+
+You will still need chat formatting permissions to use this.
+====
+=== Variables
+[%collapsible]
+====
+You can now use variables in chat to send certain information.
+
+This currently includes the following:
+
+- `<$hand>`
+ * Will display your item in chat, including the tooltip
+
+- `<$pos/position>`
+ * Will display `[position]` in chat, which users can hover their cursor over to see more information.
 ====
