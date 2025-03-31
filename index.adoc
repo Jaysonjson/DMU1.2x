@@ -177,8 +177,8 @@ You can now use variables in chat to send certain information.
 This currently includes the following:
 
 - `<$hand>`
- * Will display your item in chat, including the tooltip
+ * Will display your mainhand item in chat, including the tooltip
 
 - `<$pos/position>`
- * Will display `[position]` in chat, which will let users see more information by hovering over it with their cursor.
+ * Will display `[position]` in chat, letting users who hover over it see your blockpos and dimension.
 ====
