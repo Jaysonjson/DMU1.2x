@@ -149,6 +149,8 @@ With our new database, we've added the ability to set a prefix that will display
 
 These prefixes are limited to 5 characters, excluding formatting and square brackets.
 
+Hex formatting is also supported by both chat and tablist prefixes.
+
 To get a tab prefix, you can either:
 
 * Use the `/prefix` command
