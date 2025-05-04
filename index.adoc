@@ -169,6 +169,10 @@ We've added the ability to use hex colour codes in chat.
 
 This can be done by typing `<#000000>` in chat, replacing `#000000` with the hex colour of your choice.
 
+By using `<#000000:#FFFFFF>`, a gradient will be applied to the rest of the message.
+
+`<endg>` will end the gradient.
+
 You will still need chat formatting permissions to use this.
 ====
 === Variables
