@@ -1,4 +1,4 @@
-:version: 1.21.5
+:version: 1.21.8
 :factionmgr: cocainesnake
 :townmgr: jayson.json
 
