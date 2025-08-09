@@ -8,6 +8,22 @@ This contains all relevant information about the changes made in the update from
 
 Note that everything here is subject to change and will be updated accordingly.
 
+== General
+
+=== Will the world be reset?
+[%collapsible]
+====
+Yes; not only are we switching modloaders, but it's also a major change in versions.
+
+With the changes in code Mojang has made between 1.16.5 and {version}, there's no chance even a vanilla server could keep the same world.
+
+On the rare chance it would work, many new vanilla features would be unavailable
+
+Since {version} Dalek Mod is a rewrite not a port, many blocks will be added and removed, alongside many new and removed systems.
+
+We will not be carrying anything over to the new version.
+====
+
 == Factions changes
 
 Players can only be a member of 2 factions at once, and can only own 1.
