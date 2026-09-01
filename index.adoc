@@ -1,10 +1,12 @@
-:version: 26.x (or 1.20.1)
+:version: 26.x
+:secondaryver: 1.20.1
 :factionmgr: cocainesnake
-:townmgr: jayson.json
+:townmgr: onogai
+:jayson: jayson.json
 
-= DMU {version} Information
+= DMU {version}/{secondaryver} Information
 
-This contains all relevant information about the changes made in the update from 1.16.5 to {version} of DMU.
+This contains all relevant information about the changes made in the update from 1.16.5 to the {version} or {secondaryver} versions of DMU.
 
 Note that everything here is subject to change and will be updated accordingly.
 
@@ -13,32 +15,35 @@ Note that everything here is subject to change and will be updated accordingly.
 === Will the world be reset?
 [%collapsible]
 ====
-Yes; not only are we switching modloaders, but it's also a major change in versions.
+Yes; not only are we switching modloaders for {version}, but it's also a major change in versions for both {version} and {secondaryver}.
 
-With the changes in code Mojang has made between 1.16.5 and {version}, there's no chance even a vanilla server could keep the same world.
+With the changes in code Mojang has made between 1.16.5 and {version} as well as {secondaryver}, there's a slim chance even a vanilla server could keep the same world.
 
-On the rare chance it would work, many new vanilla features would be unavailable
+On the rare chance it would work, many new vanilla features would be unavailable. As our aim is to tie the mod's progression into a lot of the current aspects of Minecraft itself, an old world ported up would result in some content being unavailable as well.
+
+"Just increase the world border size" - as of writing, the world files for the 2026 era of 1.16.5 DMU are over 100GB, with the 2024 world files being 245GB. +
+Storage is expensive.
 
 Since {version} Dalek Mod is a rewrite not a port, many blocks will be added and removed, alongside many new and removed systems.
 
-We will not be carrying anything over to the new version.
+Pretty much the same goes for {secondaryver} - although this version _is_ a port, many systems will be added or existing ones changed, blocks updated, removed or added
+
+We will not be carrying *any* DM-related content over from previous versions of DMU - whether it's your interior, base, etc
 ====
 
-== Factions changes
+== Faction changes
 
-Players can only be a member of 2 factions at once, and can only own 1.
-
+Players can only be a member of 2 factions at once and can only own 1. +
 Players who own a faction can still join 1 other faction.
 
 === Registration
 [%collapsible]
 ====
-In order for a faction to be recognised by staff, it will need to be registered on DMU.
+In order for staff to recognise a faction on DMU, it will need to be registered. +
+This is a mandatory requirement with no exceptions - more information in the *_Staff Involvement_* tab
 
-The initial creation of a faction can only be done by server admins.
-
+The initial creation of a faction can only be done by server admins. +
 However faction owners, or anyone with role perms, can later change certain aspects.
-
 
 To get your faction created and registered, message `{factionmgr}` with the following:
 
@@ -58,7 +63,7 @@ These capes will be added to specifically DMU to avoid cluttering the main mod.
 
 The faction owner, or anyone with perms, will then be able to give these capes to members.
 
-To get a cape added, message `{townmgr}` with the following:
+To get a cape added, message `{jayson}` with the following:
 
 * The name of your faction
 
@@ -95,18 +100,37 @@ The permissions these roles can have are:
 * `ASSIGN_CAPES` - Can give members access to any capes the faction may have
 
 Members can only target roles/members lower than their current role.
-
 ====
-== Towns changes
+
+=== Staff Involvement
+[%collapsible]
+====
+As mentioned in the *_Registration_* tab, factions _must_ be registered with staff. +
+Failure to do so will result in a warning, and if still unregistered, the faction owner and possibly members of that faction, will be banned.
+
+This, sadly, is the result of a prior faction, of which throughout its entire lifespan, consistently caused issues. +
+Because of this, we were forced to implement proper rules and regulations before another similar faction shows up.
+
+However, this means that *all factions* must abide by these rules, and similarly, they *must* be enforced.
+
+Factions based on groups from Doctor Who itself _must_ adhere to stricter rules; the faction manager *must*:
+
+- Have full viewing access to the faction, including any related Discord servers.
+- Have the ability to forcefully remove players from the faction, despite their rank or position within the faction.
+* _In extreme cases, this can include the faction owner._
+
+Note that *no other members of staff* can demand things such as special permissions, privileges, or positions of power within your faction. +
+If a member of staff tries demanding such things, report them immediately to the head of staff and/or faction manager.
+====
+
+== Town changes
 
 There is no limit as to how many towns a player can be a member of.
 
 === Registration
 [%collapsible]
 ====
-Simalarly to factions, towns will also need to be registered on DMU.
-
-The town requirements are still in place.
+Similarly to factions, towns can also be registered on DMU.
 
 After getting registered, you will:
 
@@ -114,11 +138,13 @@ After getting registered, you will:
 
 ** You will need to designate these positions and ensure the town has enough, otherwise players will be unable to land
 
-* Have a designated town area, which can be appropriately increased by asking staff
+* Have a designated town area, which can be appropriately increased by `{townmgr}`
 
-* Have town ranks with different permissions listed below
+* Have town ranks with configurable permissions (see *_Ranks_*)
 
 * Have town capes, if the requirements are met
+
+The town requirements are still in place.
 ====
 === Ranks
 [%collapsible]
@@ -127,7 +153,7 @@ Much like factions, towns will have roles.
 
 These roles can be granted different permissions, such as:
 
-* `BREAK_BLOCKS`/`PLACE_BLOCKS`/`INTERACT_BLOCKS` - Can break, place or interact with blocks in the towns given area
+* `BREAK_BLOCKS`/`PLACE_BLOCKS`/`INTERACT_BLOCKS` - Can break, place, or interact with blocks in the towns given area
 
 * `MANAGE_ROLES` - Can create other roles, and manage their permissions
 
@@ -152,6 +178,12 @@ Banned players are not allowed to enter the town area, nor interact with any blo
 
 Members with the `BAN_PLAYERS` permission can ban/unban players from the town.
 ====
+=== Staff Involvement
+[%collapsible]
+====
+The regulations aren't as strict for towns as they are factions - towns must only register if they want to be integrated into the town system, which provides a proper permission system (see *_Ranks_*), or the town warps.
+====
+
 == Ranks changes
 
 Bold formatting within ranks prefixes has been removed.
@@ -171,11 +203,13 @@ To get a tab prefix, you can either:
 
 * Use the `/prefix` command
 
-  ** You will need to wait for staff to accept it. Once they do, you'll have to wait a month before changing it again
+** You will need to wait for staff to accept it. Once they do, you'll have to wait a month before changing it again
 
-  ** This command can also change your chat prefix
+*** If you have submitted a prefix change request but it has not yet been accepted, you can submit another one, and it'll override your previous request.
 
-* Message `{townmgr}` with your current rank and what you'd like the prefix to be
+** This command can also change your chat prefix
+
+* Message `{jayson}` with your current rank and what you'd like the prefix to be
 ====
 == Chat Changes
 === Formatting
@@ -189,7 +223,9 @@ By using `<#000000:#FFFFFF>`, a gradient will be applied to the rest of the mess
 
 `<endg>` will end the gradient.
 
-You will still need chat formatting permissions to use this.
+These will not play nicely with the deprecated `&` (`§`) formatting character as they are two vastly different systems
+
+_You will still need chat formatting permissions to use this._
 ====
 === Variables
 [%collapsible]
